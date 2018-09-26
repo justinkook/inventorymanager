@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inventory Master</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="jumbotron mt-5">
+          <h1 class="display-4">Inventory Master</h1>
+          <p class="lead">Welcome to the Central Inventory System</p>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Add new inventory</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Fill out the form to add something to the inventory</h6>
+            <form>
+              <div class="form-group">
+                <label for="item-name">Item name</label>
+                <input type="text" class="form-control" id="item-name"
+                  placeholder="Item name">
+              </div>
+              <div class="form-group">
+                <label for="item-id">Item ID</label>
+                <input type="text" class="form-control" id="item-id"
+                  placeholder="Item ID">
+              </div>
+              <div class="form-group">
+                <label for="item-count">Inventory count</label>
+                <input type="text" class="form-control" id="item-count"
+                  placeholder="Inventory count">
+              </div>
+              <button type="submit" class="submit btn btn-primary">Add to inventory</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mb-5">
+          <div class="card-body" id="holder">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
